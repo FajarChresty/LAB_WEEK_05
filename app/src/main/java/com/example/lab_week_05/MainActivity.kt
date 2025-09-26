@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private val retrofit by lazy {
         Retrofit.Builder()
             .baseUrl("https://api.thecatapi.com/v1/")
-            .addConverterFactory(ScalarsConverterFactory.create()) // Part 1
+            .addConverterFactory(ScalarsConverterFactory.create())
             .build()
     }
 
